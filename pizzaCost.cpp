@@ -7,6 +7,7 @@
 #include <cmath>
 #include <iomanip>
 #include <iostream>
+
 int main() {
     // declare constants
     const float HST = 0.13;
@@ -30,7 +31,7 @@ int main() {
 
     // calculate the total using tax and subtotal
     total = subtotal + tax;
-    total1 = int(total * 100 + .5);
+    total1 = static_cast<int>(total * 100 + .5);
     total2 = total1 / 100;
 
     // display the total to the user
